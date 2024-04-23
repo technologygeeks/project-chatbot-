@@ -1,0 +1,209 @@
+/*Try To add Different google font*/
+*{
+  margin: 0;
+  padding: 0; 
+}
+body{
+      background-image: linear-gradient(to right, #90ee90, #b0c4de);
+        box-sizing: border-box;
+  }
+  /*start of nav*/
+  nav{
+  background-color:white;
+  font-size:28px;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  }
+nav li{
+  display:inline-block;
+  margin:0px 8px;
+}
+nav a{
+  color:green;
+  text-decoration: none;
+  
+}
+.logo{
+  font-size:36px;
+  font-weight:bolder;
+}
+a:hover{
+  color:red;
+}
+.menu-line{
+  height:3px;
+  width:20px;
+  background:#272727;
+  margin-bottom:3px;
+}
+.menu{
+  cursor:pointer;
+  display:none;
+}
+@media all and (max-width:640px){
+  nav{
+    flex-direction:column;
+  }
+  nav li{
+    display:block;
+    padding:10px 10px;
+  }
+  ul{
+    text-align:center;
+    padding:0px;
+    display:none;
+  }
+  .logo{
+    align-self: flex-start;
+    padding:10px 0px 0px 30px;
+    }
+  .menu{
+    display:block;
+    position:absolute;
+    top:20px;
+    right:25px;
+  }
+  .show-menu{
+    display:block;
+}
+
+}
+  /*end of nav*/
+  /*start of heading*/
+  .Heading{
+    width:60%;
+    height:15vh;
+    /* border:1px solid red; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    left: 250px;
+  }
+  .content{
+    padding:30px;
+   }
+  h2{
+    text-align: center;
+  }
+  /*End of Heading*/
+  @media all and (max-width:640px){
+    .Heading{
+    display:none;
+  }
+   .hack_and_rock_chat_bot{  /*chatbot section alignment mdt*/
+    width:100%;
+    height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+   }
+    .chat-bot{
+    width:350px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+   }
+  }
+  .hack_and_rock_chat_bot{  /*chatbot section alignment mdt*/
+    width:100%;
+    height:85vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:center;
+   }
+   /*remove extra design */
+   .chat-bot{
+    width:350px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: flex-end;
+   }
+  #toggleButton{   /*button id button mdt*/
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin-right:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   i{
+    /*font awesome mdt iframe tag design*/
+    font-size:20px;
+   }
+   /*start of chat-bot design*/
+  .container {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right:50px;
+  }
+  .messages {/*msg height mdt*/
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  .input {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  .hidden {
+    display: none;
+}
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+  .button-secondary {
+    background-color: #f44336;
+  }
+  .message-container {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .user-message {
+    background-color: #e6f7ff;
+    text-align: right;
+  }
+  .bot-message {
+    background-color: #f0f0f0;
+    text-align: left;
+  }
+  /*end of chat-bot design*/
+  /*created mh for design of libex word*/
+  .libex {
+    font-size: 50px;
+    font-style: bold;
+    color:green;
+    margin-left:10px;
+  }
+  footer{
+    width:100%;
+    height:15vh;
+    border:1px solid red;
+  }
